@@ -1,0 +1,15 @@
+#include<stdio.h>
+#include<conio.h>
+
+void main()
+//-----------Multiplication of two numbers--------------
+{
+int a,b,c;
+printf("Enter the value of first number :");
+scanf("%d", &a);
+printf("Enter the value of second number:");
+scanf("%d", &b);
+c= a*b;
+printf("The Multiplication of numbers %d * %d is %d", a, b, c);
+getch();
+}
