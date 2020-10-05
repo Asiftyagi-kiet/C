@@ -1,0 +1,13 @@
+#include<stdio.h>
+ main()
+{
+  int i;
+  printf("Print the Small Alphabets\n");
+
+  for(i=97; i<=122; i++)
+  {
+      printf("%c\n", i);
+      // %c is converted ascii------------
+  }
+  return 0;
+}
