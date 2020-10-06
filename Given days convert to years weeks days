@@ -1,0 +1,17 @@
+#include<stdio.h>
+main()
+{
+    int nodays,years,weeks,days;
+    printf("Enter the days\n");
+    scanf("%d",&nodays);
+    // logic find years
+    years=nodays/365;
+     // logic find weeks
+    weeks = (nodays%365)/7;
+     // logic find days
+    days = (nodays%365)%7;
+    printf("%d = %d years, %d weeks, %d days\n", nodays,years,weeks,days);
+
+    return 0;
+
+}
