@@ -1,0 +1,24 @@
+#include<stdio.h>
+
+main()
+{
+    float p,r,t,simpleinterest;
+    
+    printf("Enter the Principal:\n");
+    
+    scanf("%f", &p);
+    
+    printf("Enter the Rate in Percentage:\n");
+    
+    scanf("%f",&r);
+    
+    printf("Enter the Time Years(decimals)\n");
+    
+    scanf("%f",&t);
+    
+    simpleinterest = (float)(p*r*t)/100.0;
+    
+    printf("Simple Interest is %f\n", simpleinterest);
+
+    return 0;
+}
