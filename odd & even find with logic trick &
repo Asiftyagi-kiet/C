@@ -1,0 +1,16 @@
+#include<stdio.h>
+void main()
+{
+    int a;
+    printf("Enter the value of a:");
+    scanf("%d",&a);
+    /* logic for binary content*/
+    if(a&1)
+    {
+    printf("this number is odd");
+    }
+    else{
+        printf("This number is  even");
+    }
+ getch();
+}
