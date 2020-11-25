@@ -3,7 +3,7 @@
 void main()
 {
     int i;
-    // ascii table 65-90 alphabets A-Z
+    // ascii table 65----90 alphabets A-Z
     for(i=65; i<=90; i++)
     {
         printf("%c\n",i);
