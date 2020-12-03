@@ -1,6 +1,7 @@
 #include<stdio.h>
 void main()
 {
+
   /* logic without semicolon print name */
     if(printf("Asif Tyagi\n")&& printf("Welcome to Kiet College")&& getch())
     {
