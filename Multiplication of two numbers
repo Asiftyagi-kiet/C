@@ -4,6 +4,7 @@
 void main()
 //-----------Multiplication of two numbers--------------
 {
+
 int a,b,c;
 printf("Enter the value of first number :");
 scanf("%d", &a);
