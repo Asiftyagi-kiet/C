@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 int main() {
-  int values[5];
+ int values[5];
 
   printf("Enter 5 integers: ");
 
