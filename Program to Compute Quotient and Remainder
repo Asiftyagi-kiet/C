@@ -6,6 +6,7 @@ int main() {
     printf("Enter divisor: ");
     scanf("%d", &divisor);
 
+
     // logic for quotient
     quotient = dividend / divisor;
 
