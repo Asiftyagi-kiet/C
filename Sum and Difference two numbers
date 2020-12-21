@@ -4,6 +4,7 @@
 #include <stdlib.h>
 
 int main()
+
 {
 	int r,s;
     float f,h;
