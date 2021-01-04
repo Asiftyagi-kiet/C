@@ -10,6 +10,7 @@ main()
     
     printf("Enter the Rate in Percentage:\n");
     
+    
     scanf("%f",&r);
     
     printf("Enter the Time Years(decimals)\n");
