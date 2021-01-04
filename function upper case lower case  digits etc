@@ -1,0 +1,103 @@
+#include<stdio.h>
+#include<conio.h>
+ char to_upper(char);
+ char to_lower(char);
+ char is_upper(char);
+ char is_lower(char);
+ char is_digit(char);
+ char is_alphabets(char);
+// int power(int,int);  
+// int factorial(int);
+ 
+void main()
+ { 
+ 	char ch;
+ 	int choice;
+ 	printf("Enter the value please:\n");
+ 	scanf("%c",&ch);
+ 	printf("------------------- - Menu List - ----------------------\n");
+ 	printf("1. Convert the upper case\n");
+ 	printf("2. Convert the lower case\n");
+ 	printf("3. Check the character in Upper case \n");
+ 	printf("4. Check the character in lower case\n");
+ 	printf("5. Check the value in digits\n");
+ 	printf("6. Check the alphabets yes or no \n");
+ 	printf("7. Exit\n");
+ 	printf("-----------Select the choice-----------------------\n");
+ 	scanf("%d",&choice);
+ 	
+ 	switch(choice)
+ 	{
+ 		case 1: to_upper(ch);
+ 		break;
+ 		case 2: to_lower(ch);
+ 		break;
+ 		case 3: is_upper(ch);
+ 		break;
+ 		case 4: is_lower(ch);
+ 		break;
+ 		case 5: is_digit(ch);
+ 		break;
+ 		case 6: is_alphabets(ch);
+ 		break;
+ 		case 7: exit(0);
+ 		break;
+ 		default:printf("Invalid number!  please 1 to 7 press key");
+ 		break;
+	 }
+	 getch();
+	 return 0;
+	
+ }
+ 
+ // lower case convert to upper case
+  char to_upper(char ch)
+  {
+  	if(ch>=97 && ch<=122)
+  	   ch-=32;
+  	   printf("%c",ch);
+  }
+ // Upper case convert to lower case
+  char to_lower(char ch)
+  {
+  	if(ch>=65 && ch<=90)
+  	   ch+=32;
+  	   printf("%c",ch);
+  }
+  
+  // To check the upper case letter
+   char is_upper(char ch)
+   {
+   	if(ch>=65 && ch<=90)
+   	printf("%c = It is Upper case letter",ch);
+   	else
+   	printf("%c = It is not Upper case letter",ch);
+   }
+   
+   // To check the lower letter
+   char is_lower(char ch)
+   {
+   	if(ch>=97 && ch<=122)
+   	printf("%c = It is lower case  letter",ch);
+   	else
+   	printf("%c = It is not lower case letter",ch);
+   }
+   // To check the character digits or not
+   char is_digit(char ch)
+   {
+   	if(ch>=48 && ch<=57)
+	   printf("%c = It is a digits",ch);
+	   else
+	   printf("%c = It is not a digits", ch);
+   }
+  
+  // To check the Alphabets ----
+  char is_alphabets(char ch)
+  {
+  	if((ch>=65 && ch<=90)|| (ch>=97 && ch<=122))
+  	printf("%c = It is alphabets",ch);
+  	else
+  	printf("%c = It is not alphabets",ch);
+   } 
+ 
+ 
