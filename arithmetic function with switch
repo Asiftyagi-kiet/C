@@ -9,8 +9,6 @@ void multiply(float,float );
 void divide(float,float );
 void reminder(int,int);
 
-
-
 int main()
 {
   float n1,n2;
