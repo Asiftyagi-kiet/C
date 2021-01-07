@@ -1,0 +1,83 @@
+#include<stdio.h>
+#include<conio.h>
+#include<math.h>
+int factorial(int);
+void power(int,int);
+void sum_digits(int);
+
+void main()
+ {
+ 	int a;
+ 	int x,y;
+ 	int choice;
+ 	do{
+ 	printf("Enter the value please:\n");
+ 	scanf("%d",&a);
+ 	printf("------------------- - Menu List - ----------------------\n");
+ 	printf("1. factorial\n");
+ 	printf("2. Sum of digits\n");
+    printf("3. power\n");
+ 	printf("4. Exit\n");
+ 	printf("-----------Select the choice-----------------------\n");
+ 	scanf("%d",&choice);
+
+ 	switch(choice)
+ 	{
+ 		case 1: factorial(a);
+ 		break;
+ 		case 2: sum_digits(a);
+ 		break;
+ 		case 3: printf("Enter the two value:\n");
+ 		scanf("%d %d",&x,&y);
+ 		power(x,y);
+ 		break;
+ 		case 4: exit(0);
+ 		break;
+ 		default:printf("Invalid number!  please 1 to 3 press key\n");
+ 		break;
+	 }
+ 	}while(1);
+
+	 getch();
+	 return 0;
+
+ }
+
+
+ int factorial(int n)
+{
+    int i,f=1;
+    for(i=1;i<=n;i++)
+    {
+        f=f*i;
+    }
+    printf("factorial is %d = %d\n",n,f);
+    printf("------------------------------  \n");
+}
+
+void power(int n1,int n2)
+{
+    if(n2<0) printf("Second number should be +ve Enter .\n ------------------------\n");
+  else
+  {
+      int i;
+    int result=1.0;
+    for(i=1; i<=n2; i++)
+    {
+       result *= n1;
+    }
+    printf("power is %d ^ %d = %d\n",n1,n2,result);
+    printf("-------------------------\n");
+}
+}
+void sum_digits (int n)
+{
+ int sum = 0;
+ while(n !=0)
+ {
+     sum = sum +n%10;
+     n=n/10;
+ }
+ printf("Sum of digits = %d\n",sum,n);
+ printf("-------------------------\n");
+}
