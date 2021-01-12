@@ -1,9 +1,11 @@
 // Program to create a simple calculator
+
 #include <stdio.h>
 
 int main() 
 {
     char operator;
+    
     double n1, n2;
    
     printf("Enter an operator (+, -, *, /): ");
