@@ -1,7 +1,8 @@
 // Program to create a simple calculator
 #include <stdio.h>
 
-int main() {
+int main() 
+{
     char operator;
     double n1, n2;
     
