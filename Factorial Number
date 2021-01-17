@@ -1,6 +1,7 @@
 #include<stdio.h>  
 
-int main()    
+int main()   
+ 
 {    
  int i,fact=1,f;    
  printf("Enter a number: ");    
