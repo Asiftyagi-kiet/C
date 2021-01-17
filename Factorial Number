@@ -8,7 +8,8 @@ int main()
   scanf("%d",&f);    
     for(i=1;i<=f;i++){    
       fact=fact*i;    
-  }    
+  }  
+  
   printf("Factorial of %d is: %d",f,fact);    
 return 0;  
 } 
