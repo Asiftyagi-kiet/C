@@ -24,7 +24,8 @@ void main()
     {
         printf("%d is bigger\n", num2);
     }
-    else{
+    else
+    {
         printf("%d is bigger\n", num3);
     }
 }
