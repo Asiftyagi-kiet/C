@@ -1,0 +1,70 @@
+#include<stdio.h>
+#include<conio.h>
+
+void getarray(int[3][3], int[3][3]);
+void addition(int[3][3], int[3][3]);
+void subtract(int[3][3], int[3][3]);
+
+
+
+int main()
+{
+    int a[3][3],b[3][3];
+    getarray(a,b);
+    addition(a,b);
+    subtract(a,b);
+
+    return 0;
+
+}
+void getarray(int a[3][3], int b[3][3])
+{
+    int i,j;
+    printf("Enter the first matrix:\n");
+    for(i=0;i<3;i++)
+    {
+        for(j=0;j<3;j++)
+        {
+        scanf("%d",&a[i][j]);
+        }
+    }
+    printf("Enter the second matrix:\n");
+     for(i=0;i<3;i++)
+    {
+        for(j=0;j<3;j++)
+        {
+        scanf("%d",&b[i][j]);
+        }
+    }
+}
+
+void addition (int a[3][3], int b[3][3])
+{
+    int i,j,c[3][3];
+    printf("\n-------------addition------------\n");
+    for(i=0;i<3;i++)
+    {
+        for(j=0;j<3;j++)
+        {
+            c[i][j]=a[i][j]+b[i][j];
+            printf("%d",c[i][j]);
+        }
+        printf("\n");
+    }
+
+}
+void subtract (int a[3][3], int b[3][3])
+{
+    int i,j,c[3][3];
+    printf("\n-------------addition------------\n");
+    for(i=0;i<3;i++)
+    {
+        for(j=0;j<3;j++)
+        {
+            c[i][j]=a[i][j]-b[i][j];
+            printf("%d",c[i][j]);
+        }
+        printf("\n");
+    }
+
+}
